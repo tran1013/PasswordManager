@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		892B0D291E8ED7D700054101 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B0D281E8ED7D700054101 /* AppDelegate.swift */; };
+		892B0D2B1E8ED7D700054101 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B0D2A1E8ED7D700054101 /* ViewController.swift */; };
+		892B0D2E1E8ED7D700054101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892B0D2C1E8ED7D700054101 /* Main.storyboard */; };
+		892B0D301E8ED7D800054101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 892B0D2F1E8ED7D800054101 /* Assets.xcassets */; };
+		892B0D331E8ED7D800054101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892B0D311E8ED7D800054101 /* LaunchScreen.storyboard */; };
+		8939D75F1E8EDB28004AD875 /* InteractiveSideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8939D75C1E8EDB28004AD875 /* InteractiveSideMenu.framework */; };
+		8939D7601E8EDB28004AD875 /* Log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8939D75D1E8EDB28004AD875 /* Log.framework */; };
+		8939D7611E8EDB28004AD875 /* Whisper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8939D75E1E8EDB28004AD875 /* Whisper.framework */; };
+		8987ABDD1E8EEB810048CE20 /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8987ABDC1E8EEB810048CE20 /* PasswordGenerator.swift */; };
+		8987ABE21E8FBCCE0048CE20 /* PasswordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8987ABE11E8FBCCE0048CE20 /* PasswordList.swift */; };
+		8987ABE41E8FBD3E0048CE20 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8987ABE31E8FBD3E0048CE20 /* TableView.swift */; };
+		89F496E51E8FD0E3007C7625 /* PasswordObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F496E41E8FD0E2007C7625 /* PasswordObject.swift */; };
+		89F496E81E8FD37B007C7625 /* PasswordSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F496E71E8FD37B007C7625 /* PasswordSave.swift */; };
+		89F496EB1E8FD434007C7625 /* PasswordDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F496EA1E8FD434007C7625 /* PasswordDetailController.swift */; };
+		C5D72AE759BCDD161CE74781 /* Pods_Playtime_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB2CE867F12966ED1F29254 /* Pods_Playtime_1.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0CB2CE867F12966ED1F29254 /* Pods_Playtime_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Playtime_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		892B0D251E8ED7D700054101 /* PasswordManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		892B0D281E8ED7D700054101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		892B0D2A1E8ED7D700054101 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		892B0D2D1E8ED7D700054101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		892B0D2F1E8ED7D800054101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		892B0D321E8ED7D800054101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		892B0D341E8ED7D800054101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8939D75C1E8EDB28004AD875 /* InteractiveSideMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InteractiveSideMenu.framework; path = "../../Library/Developer/Xcode/DerivedData/Playtime_1-ciqdtmldpluyltbuoogexayhaknw/Build/Products/Debug-iphonesimulator/InteractiveSideMenu/InteractiveSideMenu.framework"; sourceTree = "<group>"; };
+		8939D75D1E8EDB28004AD875 /* Log.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Log.framework; path = "../../Library/Developer/Xcode/DerivedData/Playtime_1-ciqdtmldpluyltbuoogexayhaknw/Build/Products/Debug-iphonesimulator/Log/Log.framework"; sourceTree = "<group>"; };
+		8939D75E1E8EDB28004AD875 /* Whisper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Whisper.framework; path = "../../Library/Developer/Xcode/DerivedData/Playtime_1-ciqdtmldpluyltbuoogexayhaknw/Build/Products/Debug-iphonesimulator/Whisper/Whisper.framework"; sourceTree = "<group>"; };
+		8987ABDC1E8EEB810048CE20 /* PasswordGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordGenerator.swift; sourceTree = "<group>"; };
+		8987ABE11E8FBCCE0048CE20 /* PasswordList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordList.swift; sourceTree = "<group>"; };
+		8987ABE31E8FBD3E0048CE20 /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		89F496E41E8FD0E2007C7625 /* PasswordObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordObject.swift; sourceTree = "<group>"; };
+		89F496E71E8FD37B007C7625 /* PasswordSave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordSave.swift; sourceTree = "<group>"; };
+		89F496EA1E8FD434007C7625 /* PasswordDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordDetailController.swift; sourceTree = "<group>"; };
+		89F6D7B91E8EDBB10083BF16 /* HTYTextField.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HTYTextField.framework; path = "../../Library/Developer/Xcode/DerivedData/Playtime_1-ciqdtmldpluyltbuoogexayhaknw/Build/Products/Debug-iphonesimulator/HTYTextField/HTYTextField.framework"; sourceTree = "<group>"; };
+		8C3C4B1D75010B7F36AD6958 /* Pods-Playtime_1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playtime_1.release.xcconfig"; path = "Pods/Target Support Files/Pods-Playtime_1/Pods-Playtime_1.release.xcconfig"; sourceTree = "<group>"; };
+		DB6BCA6789FF71A1A9500A43 /* Pods-Playtime_1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playtime_1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Playtime_1/Pods-Playtime_1.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		892B0D221E8ED7D700054101 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8939D75F1E8EDB28004AD875 /* InteractiveSideMenu.framework in Frameworks */,
+				8939D7601E8EDB28004AD875 /* Log.framework in Frameworks */,
+				8939D7611E8EDB28004AD875 /* Whisper.framework in Frameworks */,
+				C5D72AE759BCDD161CE74781 /* Pods_Playtime_1.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48CA45F67EAA03C8A1C5FB80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89F6D7B91E8EDBB10083BF16 /* HTYTextField.framework */,
+				8939D75C1E8EDB28004AD875 /* InteractiveSideMenu.framework */,
+				8939D75D1E8EDB28004AD875 /* Log.framework */,
+				8939D75E1E8EDB28004AD875 /* Whisper.framework */,
+				0CB2CE867F12966ED1F29254 /* Pods_Playtime_1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7EE6E5C216E7FCE0D868D8B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB6BCA6789FF71A1A9500A43 /* Pods-Playtime_1.debug.xcconfig */,
+				8C3C4B1D75010B7F36AD6958 /* Pods-Playtime_1.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		892B0D1C1E8ED7D700054101 = {
+			isa = PBXGroup;
+			children = (
+				892B0D271E8ED7D700054101 /* PasswordManager */,
+				892B0D261E8ED7D700054101 /* Products */,
+				7EE6E5C216E7FCE0D868D8B4 /* Pods */,
+				48CA45F67EAA03C8A1C5FB80 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		892B0D261E8ED7D700054101 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				892B0D251E8ED7D700054101 /* PasswordManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		892B0D271E8ED7D700054101 /* PasswordManager */ = {
+			isa = PBXGroup;
+			children = (
+				89F496E31E8FD0C8007C7625 /* Model */,
+				8987ABD91E8EEB540048CE20 /* Support Files */,
+				8987ABDA1E8EEB5D0048CE20 /* Controller */,
+				8987ABDB1E8EEB680048CE20 /* Storyboard */,
+			);
+			name = PasswordManager;
+			path = Playtime_1;
+			sourceTree = "<group>";
+		};
+		8987ABD91E8EEB540048CE20 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				892B0D281E8ED7D700054101 /* AppDelegate.swift */,
+				892B0D2F1E8ED7D800054101 /* Assets.xcassets */,
+				892B0D311E8ED7D800054101 /* LaunchScreen.storyboard */,
+				892B0D341E8ED7D800054101 /* Info.plist */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		8987ABDA1E8EEB5D0048CE20 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				89F496E91E8FD425007C7625 /* PasswordDetailController */,
+				89F496E61E8FD364007C7625 /* PasswordSaveController */,
+				8987ABE01E8FBCAD0048CE20 /* PasswordListController */,
+				8987ABDF1E8FBC840048CE20 /* LoginController */,
+				8987ABDE1E8FBC6E0048CE20 /* PasswordGeneratorController */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8987ABDB1E8EEB680048CE20 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				892B0D2C1E8ED7D700054101 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		8987ABDE1E8FBC6E0048CE20 /* PasswordGeneratorController */ = {
+			isa = PBXGroup;
+			children = (
+				8987ABDC1E8EEB810048CE20 /* PasswordGenerator.swift */,
+			);
+			name = PasswordGeneratorController;
+			sourceTree = "<group>";
+		};
+		8987ABDF1E8FBC840048CE20 /* LoginController */ = {
+			isa = PBXGroup;
+			children = (
+				892B0D2A1E8ED7D700054101 /* ViewController.swift */,
+			);
+			name = LoginController;
+			sourceTree = "<group>";
+		};
+		8987ABE01E8FBCAD0048CE20 /* PasswordListController */ = {
+			isa = PBXGroup;
+			children = (
+				8987ABE11E8FBCCE0048CE20 /* PasswordList.swift */,
+				8987ABE31E8FBD3E0048CE20 /* TableView.swift */,
+			);
+			name = PasswordListController;
+			sourceTree = "<group>";
+		};
+		89F496E31E8FD0C8007C7625 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89F496E41E8FD0E2007C7625 /* PasswordObject.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		89F496E61E8FD364007C7625 /* PasswordSaveController */ = {
+			isa = PBXGroup;
+			children = (
+				89F496E71E8FD37B007C7625 /* PasswordSave.swift */,
+			);
+			name = PasswordSaveController;
+			sourceTree = "<group>";
+		};
+		89F496E91E8FD425007C7625 /* PasswordDetailController */ = {
+			isa = PBXGroup;
+			children = (
+				89F496EA1E8FD434007C7625 /* PasswordDetailController.swift */,
+			);
+			name = PasswordDetailController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		892B0D241E8ED7D700054101 /* PasswordManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 892B0D371E8ED7D800054101 /* Build configuration list for PBXNativeTarget "PasswordManager" */;
+			buildPhases = (
+				27D864FB346F9FD16B340596 /* [CP] Check Pods Manifest.lock */,
+				892B0D211E8ED7D700054101 /* Sources */,
+				892B0D221E8ED7D700054101 /* Frameworks */,
+				892B0D231E8ED7D700054101 /* Resources */,
+				C52BBF0460B873C8B6CA7000 /* [CP] Embed Pods Frameworks */,
+				80FE5B468005BB41953D61B0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasswordManager;
+			productName = Playtime_1;
+			productReference = 892B0D251E8ED7D700054101 /* PasswordManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		892B0D1D1E8ED7D700054101 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Anh Duc Tran";
+				TargetAttributes = {
+					892B0D241E8ED7D700054101 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 9V6J6R5YFL;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 892B0D201E8ED7D700054101 /* Build configuration list for PBXProject "PasswordManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 892B0D1C1E8ED7D700054101;
+			productRefGroup = 892B0D261E8ED7D700054101 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				892B0D241E8ED7D700054101 /* PasswordManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		892B0D231E8ED7D700054101 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				892B0D331E8ED7D800054101 /* LaunchScreen.storyboard in Resources */,
+				892B0D301E8ED7D800054101 /* Assets.xcassets in Resources */,
+				892B0D2E1E8ED7D700054101 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27D864FB346F9FD16B340596 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		80FE5B468005BB41953D61B0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Playtime_1/Pods-Playtime_1-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C52BBF0460B873C8B6CA7000 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Playtime_1/Pods-Playtime_1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		892B0D211E8ED7D700054101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8987ABE21E8FBCCE0048CE20 /* PasswordList.swift in Sources */,
+				8987ABE41E8FBD3E0048CE20 /* TableView.swift in Sources */,
+				892B0D2B1E8ED7D700054101 /* ViewController.swift in Sources */,
+				89F496EB1E8FD434007C7625 /* PasswordDetailController.swift in Sources */,
+				892B0D291E8ED7D700054101 /* AppDelegate.swift in Sources */,
+				8987ABDD1E8EEB810048CE20 /* PasswordGenerator.swift in Sources */,
+				89F496E81E8FD37B007C7625 /* PasswordSave.swift in Sources */,
+				89F496E51E8FD0E3007C7625 /* PasswordObject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		892B0D2C1E8ED7D700054101 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				892B0D2D1E8ED7D700054101 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		892B0D311E8ED7D800054101 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				892B0D321E8ED7D800054101 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		892B0D351E8ED7D800054101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		892B0D361E8ED7D800054101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		892B0D381E8ED7D800054101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6BCA6789FF71A1A9500A43 /* Pods-Playtime_1.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9V6J6R5YFL;
+				INFOPLIST_FILE = Playtime_1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.ad.Playtime-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		892B0D391E8ED7D800054101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C3C4B1D75010B7F36AD6958 /* Pods-Playtime_1.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9V6J6R5YFL;
+				INFOPLIST_FILE = Playtime_1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.ad.Playtime-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		892B0D201E8ED7D700054101 /* Build configuration list for PBXProject "PasswordManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				892B0D351E8ED7D800054101 /* Debug */,
+				892B0D361E8ED7D800054101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		892B0D371E8ED7D800054101 /* Build configuration list for PBXNativeTarget "PasswordManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				892B0D381E8ED7D800054101 /* Debug */,
+				892B0D391E8ED7D800054101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 892B0D1D1E8ED7D700054101 /* Project object */;
+}

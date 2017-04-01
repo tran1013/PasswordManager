@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "892B0D241E8ED7D700054101"
-               BuildableName = "Playtime_1.app"
-               BlueprintName = "Playtime_1"
-               ReferencedContainer = "container:Playtime_1.xcodeproj">
+               BuildableName = "PasswordManager.app"
+               BlueprintName = "PasswordManager"
+               ReferencedContainer = "container:PasswordManager.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "892B0D241E8ED7D700054101"
-            BuildableName = "Playtime_1.app"
-            BlueprintName = "Playtime_1"
-            ReferencedContainer = "container:Playtime_1.xcodeproj">
+            BuildableName = "PasswordManager.app"
+            BlueprintName = "PasswordManager"
+            ReferencedContainer = "container:PasswordManager.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "892B0D241E8ED7D700054101"
-            BuildableName = "Playtime_1.app"
-            BlueprintName = "Playtime_1"
-            ReferencedContainer = "container:Playtime_1.xcodeproj">
+            BuildableName = "PasswordManager.app"
+            BlueprintName = "PasswordManager"
+            ReferencedContainer = "container:PasswordManager.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "892B0D241E8ED7D700054101"
-            BuildableName = "Playtime_1.app"
-            BlueprintName = "Playtime_1"
-            ReferencedContainer = "container:Playtime_1.xcodeproj">
+            BuildableName = "PasswordManager.app"
+            BlueprintName = "PasswordManager"
+            ReferencedContainer = "container:PasswordManager.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
