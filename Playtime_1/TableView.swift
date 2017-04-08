@@ -29,6 +29,9 @@ extension PasswordListController : UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Tap on item at index \(indexPath)")
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let destination = storyboard.instantiateViewController(withIdentifier: "PasswordDetailView") as! PasswordDetailController
+        navigationController?.pushViewController(destination, animated: true)
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -51,5 +54,4 @@ extension PasswordListController : UITableViewDelegate, UITableViewDataSource{
         delete.backgroundColor = UIColor.red
         return [delete]
     }
-    
 }

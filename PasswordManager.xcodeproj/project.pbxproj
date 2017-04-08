@@ -14,7 +14,7 @@
 		892B0D331E8ED7D800054101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892B0D311E8ED7D800054101 /* LaunchScreen.storyboard */; };
 		8939D75F1E8EDB28004AD875 /* InteractiveSideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8939D75C1E8EDB28004AD875 /* InteractiveSideMenu.framework */; };
 		8939D7601E8EDB28004AD875 /* Log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8939D75D1E8EDB28004AD875 /* Log.framework */; };
-		8939D7611E8EDB28004AD875 /* Whisper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8939D75E1E8EDB28004AD875 /* Whisper.framework */; };
+		8939D7611E8EDB28004AD875 /* Whisper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8939D75E1E8EDB28004AD875 /* Whisper.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		8987ABDD1E8EEB810048CE20 /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8987ABDC1E8EEB810048CE20 /* PasswordGenerator.swift */; };
 		8987ABE21E8FBCCE0048CE20 /* PasswordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8987ABE11E8FBCCE0048CE20 /* PasswordList.swift */; };
 		8987ABE41E8FBD3E0048CE20 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8987ABE31E8FBD3E0048CE20 /* TableView.swift */; };
