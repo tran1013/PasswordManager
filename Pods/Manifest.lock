@@ -1,18 +1,20 @@
 PODS:
-  - InteractiveSideMenu (1.0)
   - Log (1.0)
+  - SQLite.swift (0.11.2):
+    - SQLite.swift/standard (= 0.11.2)
+  - SQLite.swift/standard (0.11.2)
   - Whisper (4.0.0)
 
 DEPENDENCIES:
-  - InteractiveSideMenu
   - Log
+  - SQLite.swift
   - Whisper
 
 SPEC CHECKSUMS:
-  InteractiveSideMenu: 2966af15dee760f6c3e09a7a80a98c09fed3d7a4
   Log: 5e368c9528db07517d18d2d04ff5fe2b6f5a1e21
+  SQLite.swift: 670c3e9e0a806bbfd56a3de5d530768dc0e6fe7c
   Whisper: 08be92623311f8e53201e62e17f6d7b9599a4714
 
-PODFILE CHECKSUM: 24c2ebfc0f22c831d7be7c47388c5ccc8195ce89
+PODFILE CHECKSUM: 69d514d3ef742b6af84407fd93abc7b1c969fd43
 
 COCOAPODS: 1.2.0

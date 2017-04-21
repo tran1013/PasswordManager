@@ -12,20 +12,22 @@
 		892B0D2E1E8ED7D700054101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892B0D2C1E8ED7D700054101 /* Main.storyboard */; };
 		892B0D301E8ED7D800054101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 892B0D2F1E8ED7D800054101 /* Assets.xcassets */; };
 		892B0D331E8ED7D800054101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892B0D311E8ED7D800054101 /* LaunchScreen.storyboard */; };
-		8939D75F1E8EDB28004AD875 /* InteractiveSideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8939D75C1E8EDB28004AD875 /* InteractiveSideMenu.framework */; };
 		8939D7601E8EDB28004AD875 /* Log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8939D75D1E8EDB28004AD875 /* Log.framework */; };
 		8939D7611E8EDB28004AD875 /* Whisper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8939D75E1E8EDB28004AD875 /* Whisper.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		8953D3831E9A969300B6D9DF /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8953D3821E9A969300B6D9DF /* SQLite.framework */; };
 		8987ABDD1E8EEB810048CE20 /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8987ABDC1E8EEB810048CE20 /* PasswordGenerator.swift */; };
 		8987ABE21E8FBCCE0048CE20 /* PasswordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8987ABE11E8FBCCE0048CE20 /* PasswordList.swift */; };
 		8987ABE41E8FBD3E0048CE20 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8987ABE31E8FBD3E0048CE20 /* TableView.swift */; };
+		89B8BF0A1E9A95380062C3AE /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B8BF091E9A95380062C3AE /* Database.swift */; };
 		89F496E51E8FD0E3007C7625 /* PasswordObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F496E41E8FD0E2007C7625 /* PasswordObject.swift */; };
 		89F496E81E8FD37B007C7625 /* PasswordSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F496E71E8FD37B007C7625 /* PasswordSave.swift */; };
 		89F496EB1E8FD434007C7625 /* PasswordDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F496EA1E8FD434007C7625 /* PasswordDetailController.swift */; };
-		C5D72AE759BCDD161CE74781 /* Pods_Playtime_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB2CE867F12966ED1F29254 /* Pods_Playtime_1.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0CB2CE867F12966ED1F29254 /* Pods_Playtime_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Playtime_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34C5CFB162B79D8CD03D66AD /* Pods_PasswordManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PasswordManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		859A14864FDD97892519649C /* Pods-PasswordManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordManager/Pods-PasswordManager.release.xcconfig"; sourceTree = "<group>"; };
 		892B0D251E8ED7D700054101 /* PasswordManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		892B0D281E8ED7D700054101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		892B0D2A1E8ED7D700054101 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,15 +38,18 @@
 		8939D75C1E8EDB28004AD875 /* InteractiveSideMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InteractiveSideMenu.framework; path = "../../Library/Developer/Xcode/DerivedData/Playtime_1-ciqdtmldpluyltbuoogexayhaknw/Build/Products/Debug-iphonesimulator/InteractiveSideMenu/InteractiveSideMenu.framework"; sourceTree = "<group>"; };
 		8939D75D1E8EDB28004AD875 /* Log.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Log.framework; path = "../../Library/Developer/Xcode/DerivedData/Playtime_1-ciqdtmldpluyltbuoogexayhaknw/Build/Products/Debug-iphonesimulator/Log/Log.framework"; sourceTree = "<group>"; };
 		8939D75E1E8EDB28004AD875 /* Whisper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Whisper.framework; path = "../../Library/Developer/Xcode/DerivedData/Playtime_1-ciqdtmldpluyltbuoogexayhaknw/Build/Products/Debug-iphonesimulator/Whisper/Whisper.framework"; sourceTree = "<group>"; };
+		8953D3821E9A969300B6D9DF /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = "../../Library/Developer/Xcode/DerivedData/Playtime_1-ciqdtmldpluyltbuoogexayhaknw/Build/Products/Debug-iphonesimulator/SQLite.swift/SQLite.framework"; sourceTree = "<group>"; };
 		8987ABDC1E8EEB810048CE20 /* PasswordGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordGenerator.swift; sourceTree = "<group>"; };
 		8987ABE11E8FBCCE0048CE20 /* PasswordList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordList.swift; sourceTree = "<group>"; };
 		8987ABE31E8FBD3E0048CE20 /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		89B8BF091E9A95380062C3AE /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		89F496E41E8FD0E2007C7625 /* PasswordObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordObject.swift; sourceTree = "<group>"; };
 		89F496E71E8FD37B007C7625 /* PasswordSave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordSave.swift; sourceTree = "<group>"; };
 		89F496EA1E8FD434007C7625 /* PasswordDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordDetailController.swift; sourceTree = "<group>"; };
 		89F6D7B91E8EDBB10083BF16 /* HTYTextField.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HTYTextField.framework; path = "../../Library/Developer/Xcode/DerivedData/Playtime_1-ciqdtmldpluyltbuoogexayhaknw/Build/Products/Debug-iphonesimulator/HTYTextField/HTYTextField.framework"; sourceTree = "<group>"; };
 		8C3C4B1D75010B7F36AD6958 /* Pods-Playtime_1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playtime_1.release.xcconfig"; path = "Pods/Target Support Files/Pods-Playtime_1/Pods-Playtime_1.release.xcconfig"; sourceTree = "<group>"; };
 		DB6BCA6789FF71A1A9500A43 /* Pods-Playtime_1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playtime_1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Playtime_1/Pods-Playtime_1.debug.xcconfig"; sourceTree = "<group>"; };
+		EF827F8720F8C3F8CB0A70E4 /* Pods-PasswordManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordManager/Pods-PasswordManager.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +57,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8939D75F1E8EDB28004AD875 /* InteractiveSideMenu.framework in Frameworks */,
+				8953D3831E9A969300B6D9DF /* SQLite.framework in Frameworks */,
 				8939D7601E8EDB28004AD875 /* Log.framework in Frameworks */,
 				8939D7611E8EDB28004AD875 /* Whisper.framework in Frameworks */,
-				C5D72AE759BCDD161CE74781 /* Pods_Playtime_1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,11 +69,13 @@
 		48CA45F67EAA03C8A1C5FB80 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8953D3821E9A969300B6D9DF /* SQLite.framework */,
 				89F6D7B91E8EDBB10083BF16 /* HTYTextField.framework */,
 				8939D75C1E8EDB28004AD875 /* InteractiveSideMenu.framework */,
 				8939D75D1E8EDB28004AD875 /* Log.framework */,
 				8939D75E1E8EDB28004AD875 /* Whisper.framework */,
 				0CB2CE867F12966ED1F29254 /* Pods_Playtime_1.framework */,
+				34C5CFB162B79D8CD03D66AD /* Pods_PasswordManager.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -79,6 +85,8 @@
 			children = (
 				DB6BCA6789FF71A1A9500A43 /* Pods-Playtime_1.debug.xcconfig */,
 				8C3C4B1D75010B7F36AD6958 /* Pods-Playtime_1.release.xcconfig */,
+				EF827F8720F8C3F8CB0A70E4 /* Pods-PasswordManager.debug.xcconfig */,
+				859A14864FDD97892519649C /* Pods-PasswordManager.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -127,6 +135,7 @@
 		8987ABDA1E8EEB5D0048CE20 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				89B8BF081E9A952B0062C3AE /* DatabaseController */,
 				89F496E91E8FD425007C7625 /* PasswordDetailController */,
 				89F496E61E8FD364007C7625 /* PasswordSaveController */,
 				8987ABE01E8FBCAD0048CE20 /* PasswordListController */,
@@ -167,6 +176,14 @@
 				8987ABE31E8FBD3E0048CE20 /* TableView.swift */,
 			);
 			name = PasswordListController;
+			sourceTree = "<group>";
+		};
+		89B8BF081E9A952B0062C3AE /* DatabaseController */ = {
+			isa = PBXGroup;
+			children = (
+				89B8BF091E9A95380062C3AE /* Database.swift */,
+			);
+			name = DatabaseController;
 			sourceTree = "<group>";
 		};
 		89F496E31E8FD0C8007C7625 /* Model */ = {
@@ -292,7 +309,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Playtime_1/Pods-Playtime_1-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PasswordManager/Pods-PasswordManager-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C52BBF0460B873C8B6CA7000 /* [CP] Embed Pods Frameworks */ = {
@@ -307,7 +324,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Playtime_1/Pods-Playtime_1-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PasswordManager/Pods-PasswordManager-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -322,6 +339,7 @@
 				892B0D2B1E8ED7D700054101 /* ViewController.swift in Sources */,
 				89F496EB1E8FD434007C7625 /* PasswordDetailController.swift in Sources */,
 				892B0D291E8ED7D700054101 /* AppDelegate.swift in Sources */,
+				89B8BF0A1E9A95380062C3AE /* Database.swift in Sources */,
 				8987ABDD1E8EEB810048CE20 /* PasswordGenerator.swift in Sources */,
 				89F496E81E8FD37B007C7625 /* PasswordSave.swift in Sources */,
 				89F496E51E8FD0E3007C7625 /* PasswordObject.swift in Sources */,
@@ -445,13 +463,13 @@
 		};
 		892B0D381E8ED7D800054101 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB6BCA6789FF71A1A9500A43 /* Pods-Playtime_1.debug.xcconfig */;
+			baseConfigurationReference = EF827F8720F8C3F8CB0A70E4 /* Pods-PasswordManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9V6J6R5YFL;
 				INFOPLIST_FILE = Playtime_1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.ad.Playtime-1";
+				PRODUCT_BUNDLE_IDENTIFIER = de.ad.PasswordManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -459,13 +477,13 @@
 		};
 		892B0D391E8ED7D800054101 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C3C4B1D75010B7F36AD6958 /* Pods-Playtime_1.release.xcconfig */;
+			baseConfigurationReference = 859A14864FDD97892519649C /* Pods-PasswordManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9V6J6R5YFL;
 				INFOPLIST_FILE = Playtime_1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.ad.Playtime-1";
+				PRODUCT_BUNDLE_IDENTIFIER = de.ad.PasswordManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

@@ -9,6 +9,7 @@
 import UIKit
 import Log
 import Whisper
+import LocalAuthentication
 
 class LoginController: UIViewController {
     
@@ -18,27 +19,14 @@ class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboard()
-        self.navigationController?.isNavigationBarHidden = false
-        self.navigationController?.navigationBar.backItem?.title = "Logout"
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     
-    @IBAction func shoutAction(_ sender: UIButton) {
-        guard let navigationController = navigationController else { return }
-        
-        let announcement = Announcement(title: "Your title", subtitle: "Your subtitle", image: UIImage(named: "avatar"))
-        Whisper.show(shout: announcement, to: navigationController, completion: {
-            print("The shout was silent.")
-        })
-    }
-    
-    @IBAction func whisperAction(_ sender: UIButton) {
+    @IBAction func loginAction(_ sender: UIButton) {
         guard let navigationController = navigationController else { return }
         let message: Message
         
@@ -56,8 +44,8 @@ class LoginController: UIViewController {
             message = Message(title: "User & Password incorrect", backgroundColor: .red)
             Whisper.show(whisper: message, to: navigationController, action: .show)
         }
-        
     }
+    
     
     func hideKeyboard()
     {

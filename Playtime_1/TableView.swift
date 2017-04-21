@@ -21,17 +21,23 @@ extension PasswordListController : UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellIdentifier", for: indexPath) as UITableViewCell
-        let contentTable = content[indexPath.row] as String
+        let contentTable = content[indexPath.row]
         print(contentTable)
-        cell.textLabel!.text = contentTable
+        cell.textLabel!.text = contentTable.pwFor
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Tap on item at index \(indexPath)")
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let destination = storyboard.instantiateViewController(withIdentifier: "PasswordDetailView") as! PasswordDetailController
-        navigationController?.pushViewController(destination, animated: true)
+        print("Tap on item at index \(indexPath.row.description)")
+        
+        
+        let pwDetailView = storyboard?.instantiateViewController(withIdentifier: "PasswordDetailView") as! PasswordDetailController
+        
+        pwDetailView.site = content[indexPath.row].pwFor
+        pwDetailView.username = content[indexPath.row].username
+        pwDetailView.password = content[indexPath.row].password
+        
+        navigationController?.pushViewController(pwDetailView, animated: true)
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -40,17 +46,13 @@ extension PasswordListController : UITableViewDelegate, UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-//        let update = UITableViewRowAction(style: .normal, title: "Update") { action, index in
-//            print("update")
-//        }
         let delete = UITableViewRowAction(style: .normal, title: "Delete") { action, index in
             print("delete")
-//            self.db.delete(content_: indexPath.row.description)
-//            self.content.remove(at: indexPath.row)
+
+            self.db.delete(site_: self.content[indexPath.row].pwFor, username_: self.content[indexPath.row].username)
+            self.content.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.fade)
         }
-        
-//        update.backgroundColor = UIColor.orange
         delete.backgroundColor = UIColor.red
         return [delete]
     }

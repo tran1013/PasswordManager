@@ -61,7 +61,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="whisperAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W1P-O5-ZL4"/>
+                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eer-sE-T47"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -186,25 +186,23 @@
                                     <action selector="generatePwd:" destination="4dH-SZ-YCT" eventType="touchUpInside" id="jfy-ab-E3Y"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YJU-d6-rLw">
-                                <rect key="frame" x="40" y="73" width="240" height="110"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Your generated password will be here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YJU-d6-rLw">
+                                <rect key="frame" x="40" y="73" width="240" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlX-WR-oHS">
                                 <rect key="frame" x="16" y="470" width="288" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.64378152570000002" green="0.85822452319999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.64387601613998413" green="0.86023175716400146" blue="0.99830168485641479" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Save">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="saveAction:" destination="4dH-SZ-YCT" eventType="touchUpInside" id="D4R-0d-kFG"/>
-                                    <segue destination="c6F-Ra-2pb" kind="show" id="6yi-5R-qbs"/>
+                                    <action selector="saveAction:" destination="4dH-SZ-YCT" eventType="touchUpInside" id="pFH-Ue-j6l"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -215,6 +213,7 @@
                         <outlet property="digitsLabel" destination="dwx-s2-mO9" id="qpG-n0-eAq"/>
                         <outlet property="lengthSlider" destination="5WQ-rA-AJj" id="Hqf-PH-uEw"/>
                         <outlet property="lengthText" destination="5WQ-rA-AJj" id="a0I-1L-aMa"/>
+                        <outlet property="saveButton" destination="hlX-WR-oHS" id="2UA-5s-dZS"/>
                         <outlet property="symbolsLabel" destination="aS8-Rq-fAr" id="u4p-dr-jxx"/>
                         <outlet property="textView" destination="YJU-d6-rLw" id="tJ3-Sg-FeU"/>
                         <outlet property="upperCaseLabel" destination="Uhg-4t-Xkx" id="zSn-bd-McM"/>
@@ -227,7 +226,7 @@
         <!--Password Save Controller-->
         <scene sceneID="6AC-SL-env">
             <objects>
-                <viewController id="c6F-Ra-2pb" customClass="PasswordSaveController" customModule="PasswordManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="pwSaveView" id="c6F-Ra-2pb" customClass="PasswordSaveController" customModule="PasswordManager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BJM-6g-hMj"/>
                         <viewControllerLayoutGuide type="bottom" id="7db-NP-1QC"/>
@@ -237,17 +236,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Site the Password is for" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcE-BO-WZH">
-                                <rect key="frame" x="16" y="77" width="288" height="21"/>
+                                <rect key="frame" x="16" y="94" width="288" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O9s-J4-OtJ">
-                                <rect key="frame" x="16" y="106" width="288" height="30"/>
+                                <rect key="frame" x="16" y="123" width="288" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pB6-M7-XHk">
@@ -261,7 +260,7 @@
                                 <rect key="frame" x="16" y="203" width="288" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Generated Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8F-DU-Zel">
@@ -271,12 +270,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CAl-V9-jYG">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CAl-V9-jYG">
                                 <rect key="frame" x="16" y="303" width="288" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZd-Uf-b3v">
@@ -288,12 +286,12 @@
                                 </state>
                                 <connections>
                                     <action selector="saveBtn:" destination="c6F-Ra-2pb" eventType="touchUpInside" id="qnN-Dm-ZrR"/>
+                                    <segue destination="wNs-nE-DI2" kind="show" id="nF0-J0-7sq"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="izI-HQ-W3o"/>
                     <connections>
                         <outlet property="siteFor" destination="O9s-J4-OtJ" id="tLs-JL-S97"/>
                         <outlet property="textView" destination="CAl-V9-jYG" id="k8V-rh-eG8"/>
@@ -307,7 +305,7 @@
         <!--List-->
         <scene sceneID="EAg-Am-gu4">
             <objects>
-                <viewController id="Zc6-51-APp" customClass="PasswordListController" customModule="PasswordManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PasswordListView" id="Zc6-51-APp" customClass="PasswordListController" customModule="PasswordManager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K0t-U3-x9c"/>
                         <viewControllerLayoutGuide type="bottom" id="VSC-I7-oY9"/>
@@ -317,7 +315,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OsF-o6-inR">
-                                <rect key="frame" x="16" y="86" width="288" height="425"/>
+                                <rect key="frame" x="16" y="28" width="288" height="483"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -325,7 +323,7 @@
                                         <rect key="frame" x="0.0" y="28" width="288" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jHQ-Cz-jGh" id="9Cg-6N-vUV">
-                                            <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -335,22 +333,12 @@
                                     <outlet property="delegate" destination="Zc6-51-APp" id="PCr-eF-mcC"/>
                                 </connections>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I1j-U3-vmh">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Password List" id="oIG-zz-lys">
-                                        <barButtonItem key="backBarButtonItem" title="Logout" id="Nde-BN-nNx"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="List" image="List" id="XDN-Y0-u1V"/>
                     <connections>
                         <outlet property="tableView" destination="OsF-o6-inR" id="rGa-k2-gch"/>
-                        <segue destination="t47-17-DEO" kind="show" identifier="detailCell" action="showDetailViewController:sender:" id="9c1-lG-ncP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vqn-GK-Nlb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -390,11 +378,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i4b-lX-GcW">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i4b-lX-GcW">
                                 <rect key="frame" x="16" y="272" width="288" height="234"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -408,6 +395,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="siteLabel" destination="UcD-iU-SAv" id="XTJ-D0-sOP"/>
+                        <outlet property="textView" destination="i4b-lX-GcW" id="dae-8b-ht6"/>
+                        <outlet property="textViewLabel" destination="i4b-lX-GcW" id="pF2-ji-Z6a"/>
+                        <outlet property="usernameLabel" destination="lYF-el-ZQM" id="Qih-T7-HW7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T1p-eK-Hty" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -416,7 +409,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="OJL-g8-3WA">
             <objects>
-                <tabBarController id="wNs-nE-DI2" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Bla" id="wNs-nE-DI2" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="92R-qc-ttj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -455,4 +448,7 @@
         <image name="List" width="25" height="25"/>
         <image name="Logo" width="333" height="242"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="nF0-J0-7sq"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -8,22 +8,23 @@
 
 import Foundation
 import UIKit
+import SQLite
 
 class PasswordListController : UIViewController
 {
     
     @IBOutlet var tableView: UITableView!
-//    var content = [String]()
-    var content = ["Bla", "Blue", "Blie"]
 
+    var content: [PasswordObject] = []
+    var db = database()
+    
     override func viewDidLoad() {
-//        super.viewDidLoad()
+        super.viewDidLoad()
+        content = db.getAll()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning() 
     }
-    
-    
     
 }

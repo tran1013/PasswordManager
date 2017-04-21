@@ -1,13 +1,12 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'Playtime_1' do
+target 'PasswordManager' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for Playtime_1
-  pod 'InteractiveSideMenu'
+  # Pods for PasswordManager
   pod 'Whisper'
   pod 'Log'
-
+  pod 'SQLite.swift'
 end
