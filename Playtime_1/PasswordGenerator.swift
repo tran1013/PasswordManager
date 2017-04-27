@@ -50,8 +50,6 @@ class PasswordGeneratorController : UIViewController
     @IBAction func generatePwd(_ sender: UIButton) {
         generatePassword()
         textView.text = result
-        saveButton.isHidden = false
-        
     }
     
     @IBAction func digitsStepper(_ sender: UIStepper) {
@@ -108,13 +106,14 @@ class PasswordGeneratorController : UIViewController
             log.info("Password generated 🎉😁")
             message = Message(title: "Password generated 🎉", backgroundColor: .green)
             Whisper.show(whisper: message, to: navigationController, action: .show)
-            
+            saveButton.isHidden = false
             print("PASSWORD: \(result)")
         } else if(usrInputNumbersOfChars > sliderValue) {
             log.error("Something shit happened 💩😱")
             let alert = UIAlertController(title: "Can't do it...", message: "Your settings are longer than the whole password length 😱", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "I'm sorry. I'll fix it. 😩", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
+            saveButton.isHidden = true
         }
         
     }

@@ -9,7 +9,6 @@
 import UIKit
 import Log
 import Whisper
-import LocalAuthentication
 
 class LoginController: UIViewController {
     
@@ -38,8 +37,14 @@ class LoginController: UIViewController {
             self.performSegue(withIdentifier: "tabbarController", sender: sender)
             userInput.text = ""
             pwdInput.text = ""
+            self.navigationController?.isNavigationBarHidden = true
             
-        } else
+        }
+        else if((userInput.text?.isEmpty == true)||(pwdInput.text?.isEmpty == true)){
+            message = Message(title: "User or Password empty", backgroundColor: .red)
+            Whisper.show(whisper: message, to: navigationController, action: .show)
+        }
+        else
         {
             message = Message(title: "User & Password incorrect", backgroundColor: .red)
             Whisper.show(whisper: message, to: navigationController, action: .show)

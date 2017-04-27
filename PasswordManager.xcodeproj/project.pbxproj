@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		892B0D291E8ED7D700054101 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B0D281E8ED7D700054101 /* AppDelegate.swift */; };
-		892B0D2B1E8ED7D700054101 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B0D2A1E8ED7D700054101 /* ViewController.swift */; };
+		892B0D2B1E8ED7D700054101 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B0D2A1E8ED7D700054101 /* LoginController.swift */; };
 		892B0D2E1E8ED7D700054101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892B0D2C1E8ED7D700054101 /* Main.storyboard */; };
 		892B0D301E8ED7D800054101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 892B0D2F1E8ED7D800054101 /* Assets.xcassets */; };
 		892B0D331E8ED7D800054101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892B0D311E8ED7D800054101 /* LaunchScreen.storyboard */; };
@@ -30,7 +30,7 @@
 		859A14864FDD97892519649C /* Pods-PasswordManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordManager/Pods-PasswordManager.release.xcconfig"; sourceTree = "<group>"; };
 		892B0D251E8ED7D700054101 /* PasswordManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		892B0D281E8ED7D700054101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		892B0D2A1E8ED7D700054101 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		892B0D2A1E8ED7D700054101 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		892B0D2D1E8ED7D700054101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		892B0D2F1E8ED7D800054101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		892B0D321E8ED7D800054101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 		8987ABDF1E8FBC840048CE20 /* LoginController */ = {
 			isa = PBXGroup;
 			children = (
-				892B0D2A1E8ED7D700054101 /* ViewController.swift */,
+				892B0D2A1E8ED7D700054101 /* LoginController.swift */,
 			);
 			name = LoginController;
 			sourceTree = "<group>";
@@ -336,7 +336,7 @@
 			files = (
 				8987ABE21E8FBCCE0048CE20 /* PasswordList.swift in Sources */,
 				8987ABE41E8FBD3E0048CE20 /* TableView.swift in Sources */,
-				892B0D2B1E8ED7D700054101 /* ViewController.swift in Sources */,
+				892B0D2B1E8ED7D700054101 /* LoginController.swift in Sources */,
 				89F496EB1E8FD434007C7625 /* PasswordDetailController.swift in Sources */,
 				892B0D291E8ED7D700054101 /* AppDelegate.swift in Sources */,
 				89B8BF0A1E9A95380062C3AE /* Database.swift in Sources */,

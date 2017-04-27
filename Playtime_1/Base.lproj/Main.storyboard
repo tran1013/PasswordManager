@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fgC-mP-7fT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fgC-mP-7fT">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -54,7 +54,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssm-HN-W9b">
-                                <rect key="frame" x="80" y="423" width="160" height="30"/>
+                                <rect key="frame" x="16" y="423" width="288" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.64378152572220548" green="0.85822452322282961" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Login">
@@ -78,7 +78,7 @@
             </objects>
             <point key="canvasLocation" x="2242.5" y="136.26760563380282"/>
         </scene>
-        <!--Generator-->
+        <!--Password Generator Controller-->
         <scene sceneID="1Rg-3B-fhK">
             <objects>
                 <viewController id="4dH-SZ-YCT" customClass="PasswordGeneratorController" customModule="PasswordManager" customModuleProvider="target" sceneMemberID="viewController">
@@ -208,7 +208,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Generator" image="Generator" id="hIa-Tm-0xX"/>
+                    <navigationItem key="navigationItem" id="Jmo-8B-teV">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="bSV-wU-Fem">
+                            <connections>
+                                <segue destination="fgC-mP-7fT" kind="show" id="s6l-Y3-Jqy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="digitsLabel" destination="dwx-s2-mO9" id="qpG-n0-eAq"/>
                         <outlet property="lengthSlider" destination="5WQ-rA-AJj" id="Hqf-PH-uEw"/>
@@ -221,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uqd-hw-idV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4441.875" y="435.21126760563379"/>
+            <point key="canvasLocation" x="5439.375" y="435.21126760563379"/>
         </scene>
         <!--Password Save Controller-->
         <scene sceneID="6AC-SL-env">
@@ -300,9 +306,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ff3-8b-Ybw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5201" y="435"/>
+            <point key="canvasLocation" x="6196.875" y="434.15492957746477"/>
         </scene>
-        <!--List-->
+        <!--Password List Controller-->
         <scene sceneID="EAg-Am-gu4">
             <objects>
                 <viewController storyboardIdentifier="PasswordListView" id="Zc6-51-APp" customClass="PasswordListController" customModule="PasswordManager" customModuleProvider="target" sceneMemberID="viewController">
@@ -323,7 +329,7 @@
                                         <rect key="frame" x="0.0" y="28" width="288" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jHQ-Cz-jGh" id="9Cg-6N-vUV">
-                                            <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -336,14 +342,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="List" image="List" id="XDN-Y0-u1V"/>
+                    <navigationItem key="navigationItem" id="XNq-cb-ZLJ">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="XxO-dr-eWf">
+                            <connections>
+                                <segue destination="fgC-mP-7fT" kind="show" id="vAK-Tr-OQS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="OsF-o6-inR" id="rGa-k2-gch"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vqn-GK-Nlb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4443.75" y="-312.67605633802816"/>
+            <point key="canvasLocation" x="5441.25" y="-312.67605633802816"/>
         </scene>
         <!--Password Detail Controller-->
         <scene sceneID="tGK-XK-1pn">
@@ -404,7 +416,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T1p-eK-Hty" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5254" y="-313"/>
+            <point key="canvasLocation" x="6251.25" y="-313.73239436619718"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OJL-g8-3WA">
@@ -416,8 +428,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Zc6-51-APp" kind="relationship" relationship="viewControllers" id="HSm-Ki-JbS"/>
-                        <segue destination="4dH-SZ-YCT" kind="relationship" relationship="viewControllers" id="Ywg-A3-mZV"/>
+                        <segue destination="M6X-Z1-yNh" kind="relationship" relationship="viewControllers" id="HSm-Ki-JbS"/>
+                        <segue destination="GCA-50-UhT" kind="relationship" relationship="viewControllers" id="Ywg-A3-mZV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MbI-BM-bQp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -427,6 +439,7 @@
         <!--Navigation Controller-->
         <scene sceneID="IVV-Gf-IQO">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ox-Zz-JR9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fgC-mP-7fT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="63l-Zi-3Sf">
@@ -434,13 +447,58 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="BxX-tI-w8c">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pp9-nI-KAE"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ox-Zz-JR9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1245" y="136.26760563380282"/>
+        </scene>
+        <!--List-->
+        <scene sceneID="ala-Y5-UDf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="M6X-Z1-yNh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="List" image="List" id="XDN-Y0-u1V"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bKZ-TK-mPA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="cpg-wH-QQZ">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="Zc6-51-APp" kind="relationship" relationship="rootViewController" id="UYd-X4-wio"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ufo-Yx-w1o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4443.75" y="-312.67605633802816"/>
+        </scene>
+        <!--Generator-->
+        <scene sceneID="Pzt-L2-ain">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GCA-50-UhT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Generator" image="Generator" id="hIa-Tm-0xX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FNL-xq-DGZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4dH-SZ-YCT" kind="relationship" relationship="rootViewController" id="GuM-SV-sgk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hPz-VX-d0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4441.875" y="435.21126760563379"/>
         </scene>
     </scenes>
     <resources>
@@ -449,6 +507,7 @@
         <image name="Logo" width="333" height="242"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nF0-J0-7sq"/>
+        <segue reference="52j-sH-h3p"/>
+        <segue reference="s6l-Y3-Jqy"/>
     </inferredMetricsTieBreakers>
 </document>
