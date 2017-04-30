@@ -21,6 +21,7 @@ class PasswordSaveController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboard()
         textView.text = pwTextView
         textView.layer.borderWidth = 0.5
         textView.layer.borderColor = UIColor.darkGray.cgColor
@@ -44,8 +45,22 @@ class PasswordSaveController: UIViewController{
             db.insert(site_: siteFor.text!, username_: username.text!, password_: textView.text!)
             message = Message(title: "Password saved 🎉", backgroundColor: .green)
             Whisper.show(whisper: message, to: navigationController_, action: .show)
-
+            
+            let pwListView = storyboard?.instantiateViewController(withIdentifier: "PasswordListView") as! PasswordListController
+            navigationController?.pushViewController(pwListView, animated: true)
+            self.tabBarController?.selectedIndex = 0
         }
         
     }
+    
+    func hideKeyboard()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+
 }

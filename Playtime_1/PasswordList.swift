@@ -26,5 +26,4 @@ class PasswordListController : UIViewController
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning() 
     }
-    
 }

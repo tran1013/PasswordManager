@@ -38,6 +38,7 @@ extension PasswordListController : UITableViewDelegate, UITableViewDataSource{
         pwDetailView.password = content[indexPath.row].password
         
         navigationController?.pushViewController(pwDetailView, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

@@ -186,7 +186,7 @@
                                     <action selector="generatePwd:" destination="4dH-SZ-YCT" eventType="touchUpInside" id="jfy-ab-E3Y"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Your generated password will be here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YJU-d6-rLw">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" editable="NO" text="Your generated password will be here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YJU-d6-rLw">
                                 <rect key="frame" x="40" y="73" width="240" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -292,7 +292,6 @@
                                 </state>
                                 <connections>
                                     <action selector="saveBtn:" destination="c6F-Ra-2pb" eventType="touchUpInside" id="qnN-Dm-ZrR"/>
-                                    <segue destination="wNs-nE-DI2" kind="show" id="nF0-J0-7sq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -302,6 +301,7 @@
                         <outlet property="siteFor" destination="O9s-J4-OtJ" id="tLs-JL-S97"/>
                         <outlet property="textView" destination="CAl-V9-jYG" id="k8V-rh-eG8"/>
                         <outlet property="username" destination="EoW-5E-y8m" id="CCN-Pw-X7X"/>
+                        <segue destination="Zc6-51-APp" kind="show" identifier="PasswordListShowIdent" id="YeN-w7-i3S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ff3-8b-Ybw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -439,7 +439,6 @@
         <!--Navigation Controller-->
         <scene sceneID="IVV-Gf-IQO">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ox-Zz-JR9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fgC-mP-7fT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="63l-Zi-3Sf">
@@ -455,13 +454,14 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pp9-nI-KAE"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ox-Zz-JR9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1245" y="136.26760563380282"/>
         </scene>
         <!--List-->
         <scene sceneID="ala-Y5-UDf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="M6X-Z1-yNh" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M6X-Z1-yNh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="List" image="List" id="XDN-Y0-u1V"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bKZ-TK-mPA">
@@ -507,7 +507,7 @@
         <image name="Logo" width="333" height="242"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="52j-sH-h3p"/>
         <segue reference="s6l-Y3-Jqy"/>
+        <segue reference="UYd-X4-wio"/>
     </inferredMetricsTieBreakers>
 </document>
