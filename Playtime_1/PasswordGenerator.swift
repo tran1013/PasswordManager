@@ -71,7 +71,7 @@ class PasswordGeneratorController : UIViewController
         
         pwSaveView.pwTextView = result
         navigationController?.pushViewController(pwSaveView, animated: true)
-        
+        textView.text = ""
         
     }
     
@@ -88,8 +88,6 @@ class PasswordGeneratorController : UIViewController
         let letter: NSString = "abcdefghijklmnopqrstuvwxyz"
         let digits: NSString = "123456789"
         let symbols: NSString = "!§$%&/()=?[]|{}"
-        let message: Message
-        guard let navigationController = navigationController else { return }
         
         let digitsInPw = Int(digitsLabel.text!)
         let symbolsInPW = Int(symbolsLabel.text!)
@@ -104,10 +102,8 @@ class PasswordGeneratorController : UIViewController
             password += passwordLoop(range: letterInPw, charType: letter)
             result = finalizePassword(range: sliderValue, pwOrdered: password as NSString)
             log.info("Password generated 🎉😁")
-            message = Message(title: "Password generated 🎉", backgroundColor: .green)
-            Whisper.show(whisper: message, to: navigationController, action: .show)
             saveButton.isHidden = false
-            print("PASSWORD: \(result)")
+//            print("PASSWORD: \(result)")
         } else if(usrInputNumbersOfChars > sliderValue) {
             log.error("Something shit happened 💩😱")
             let alert = UIAlertController(title: "Can't do it...", message: "Your settings are longer than the whole password length 😱", preferredStyle: UIAlertControllerStyle.alert)

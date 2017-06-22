@@ -11,19 +11,21 @@ import UIKit
 
 extension PasswordListController : UITableViewDelegate, UITableViewDataSource{
     
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return content.count
+        return pws.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellIdentifier", for: indexPath) as UITableViewCell
-        let contentTable = content[indexPath.row]
-        print(contentTable)
-        cell.textLabel!.text = contentTable.pwFor
+        
+        let PWArray = pws[indexPath.row]
+        
+        cell.textLabel!.text = PWArray.passwordFor
         return cell
     }
     
@@ -33,9 +35,9 @@ extension PasswordListController : UITableViewDelegate, UITableViewDataSource{
         
         let pwDetailView = storyboard?.instantiateViewController(withIdentifier: "PasswordDetailView") as! PasswordDetailController
         
-        pwDetailView.site = content[indexPath.row].pwFor
-        pwDetailView.username = content[indexPath.row].username
-        pwDetailView.password = content[indexPath.row].password
+        pwDetailView.site = pws[indexPath.row].passwordFor!
+        pwDetailView.username = pws[indexPath.row].username!
+        pwDetailView.password = pws[indexPath.row].password!
         
         navigationController?.pushViewController(pwDetailView, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
@@ -46,15 +48,19 @@ extension PasswordListController : UITableViewDelegate, UITableViewDataSource{
     }
     
     
-    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        let delete = UITableViewRowAction(style: .normal, title: "Delete") { action, index in
-            print("delete")
-
-            self.db.delete(site_: self.content[indexPath.row].pwFor, username_: self.content[indexPath.row].username)
-            self.content.remove(at: indexPath.row)
-            self.tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.fade)
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let passwords = pws[indexPath.row]
+            context.delete(passwords)
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            
+            do{
+                pws = try context.fetch(Password.fetchRequest())
+                log.info("Item deleted")
+            } catch {
+                log.error("Fetching Failed!")
+            }
         }
-        delete.backgroundColor = UIColor.red
-        return [delete]
+        tableView.reloadData()
     }
 }

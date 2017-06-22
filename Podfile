@@ -8,5 +8,4 @@ target 'PasswordManager' do
   # Pods for PasswordManager
   pod 'Whisper'
   pod 'Log'
-  pod 'SQLite.swift'
 end

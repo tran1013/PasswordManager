@@ -8,22 +8,37 @@
 
 import Foundation
 import UIKit
-import SQLite
+import Log
 
 class PasswordListController : UIViewController
 {
+    let log = Logger()
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var pws: [Password] = []
     
     @IBOutlet var tableView: UITableView!
-
-    var content: [PasswordObject] = []
-    var db = database()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        content = db.getAll()
+        tableView.delegate = self
+        tableView.dataSource = self
+        log.minLevel = .warning
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning() 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        getData()
+        tableView.reloadData()
+    }
+    
+    func getData() {
+        do {
+            pws = try context.fetch(Password.fetchRequest())
+        } catch {
+            print("Fetching Failed")
+        }
     }
 }

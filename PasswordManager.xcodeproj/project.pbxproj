@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60B23BEA64E49440974766F0 /* Pods_PasswordManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C5CFB162B79D8CD03D66AD /* Pods_PasswordManager.framework */; };
+		7F4DBC381EFAC70800157136 /* PWEntity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F4DBC361EFAC70800157136 /* PWEntity.xcdatamodeld */; };
 		892B0D291E8ED7D700054101 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B0D281E8ED7D700054101 /* AppDelegate.swift */; };
 		892B0D2B1E8ED7D700054101 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B0D2A1E8ED7D700054101 /* LoginController.swift */; };
 		892B0D2E1E8ED7D700054101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892B0D2C1E8ED7D700054101 /* Main.storyboard */; };
@@ -14,12 +16,9 @@
 		892B0D331E8ED7D800054101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892B0D311E8ED7D800054101 /* LaunchScreen.storyboard */; };
 		8939D7601E8EDB28004AD875 /* Log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8939D75D1E8EDB28004AD875 /* Log.framework */; };
 		8939D7611E8EDB28004AD875 /* Whisper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8939D75E1E8EDB28004AD875 /* Whisper.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		8953D3831E9A969300B6D9DF /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8953D3821E9A969300B6D9DF /* SQLite.framework */; };
 		8987ABDD1E8EEB810048CE20 /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8987ABDC1E8EEB810048CE20 /* PasswordGenerator.swift */; };
 		8987ABE21E8FBCCE0048CE20 /* PasswordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8987ABE11E8FBCCE0048CE20 /* PasswordList.swift */; };
 		8987ABE41E8FBD3E0048CE20 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8987ABE31E8FBD3E0048CE20 /* TableView.swift */; };
-		89B8BF0A1E9A95380062C3AE /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B8BF091E9A95380062C3AE /* Database.swift */; };
-		89F496E51E8FD0E3007C7625 /* PasswordObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F496E41E8FD0E2007C7625 /* PasswordObject.swift */; };
 		89F496E81E8FD37B007C7625 /* PasswordSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F496E71E8FD37B007C7625 /* PasswordSave.swift */; };
 		89F496EB1E8FD434007C7625 /* PasswordDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F496EA1E8FD434007C7625 /* PasswordDetailController.swift */; };
 /* End PBXBuildFile section */
@@ -27,6 +26,7 @@
 /* Begin PBXFileReference section */
 		0CB2CE867F12966ED1F29254 /* Pods_Playtime_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Playtime_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C5CFB162B79D8CD03D66AD /* Pods_PasswordManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PasswordManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F4DBC371EFAC70800157136 /* PWEntity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PWEntity.xcdatamodel; sourceTree = "<group>"; };
 		859A14864FDD97892519649C /* Pods-PasswordManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordManager/Pods-PasswordManager.release.xcconfig"; sourceTree = "<group>"; };
 		892B0D251E8ED7D700054101 /* PasswordManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		892B0D281E8ED7D700054101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,18 +35,13 @@
 		892B0D2F1E8ED7D800054101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		892B0D321E8ED7D800054101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		892B0D341E8ED7D800054101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8939D75C1E8EDB28004AD875 /* InteractiveSideMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InteractiveSideMenu.framework; path = "../../Library/Developer/Xcode/DerivedData/Playtime_1-ciqdtmldpluyltbuoogexayhaknw/Build/Products/Debug-iphonesimulator/InteractiveSideMenu/InteractiveSideMenu.framework"; sourceTree = "<group>"; };
 		8939D75D1E8EDB28004AD875 /* Log.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Log.framework; path = "../../Library/Developer/Xcode/DerivedData/Playtime_1-ciqdtmldpluyltbuoogexayhaknw/Build/Products/Debug-iphonesimulator/Log/Log.framework"; sourceTree = "<group>"; };
 		8939D75E1E8EDB28004AD875 /* Whisper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Whisper.framework; path = "../../Library/Developer/Xcode/DerivedData/Playtime_1-ciqdtmldpluyltbuoogexayhaknw/Build/Products/Debug-iphonesimulator/Whisper/Whisper.framework"; sourceTree = "<group>"; };
-		8953D3821E9A969300B6D9DF /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = "../../Library/Developer/Xcode/DerivedData/Playtime_1-ciqdtmldpluyltbuoogexayhaknw/Build/Products/Debug-iphonesimulator/SQLite.swift/SQLite.framework"; sourceTree = "<group>"; };
 		8987ABDC1E8EEB810048CE20 /* PasswordGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordGenerator.swift; sourceTree = "<group>"; };
 		8987ABE11E8FBCCE0048CE20 /* PasswordList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordList.swift; sourceTree = "<group>"; };
 		8987ABE31E8FBD3E0048CE20 /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
-		89B8BF091E9A95380062C3AE /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
-		89F496E41E8FD0E2007C7625 /* PasswordObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordObject.swift; sourceTree = "<group>"; };
 		89F496E71E8FD37B007C7625 /* PasswordSave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordSave.swift; sourceTree = "<group>"; };
 		89F496EA1E8FD434007C7625 /* PasswordDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordDetailController.swift; sourceTree = "<group>"; };
-		89F6D7B91E8EDBB10083BF16 /* HTYTextField.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HTYTextField.framework; path = "../../Library/Developer/Xcode/DerivedData/Playtime_1-ciqdtmldpluyltbuoogexayhaknw/Build/Products/Debug-iphonesimulator/HTYTextField/HTYTextField.framework"; sourceTree = "<group>"; };
 		8C3C4B1D75010B7F36AD6958 /* Pods-Playtime_1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playtime_1.release.xcconfig"; path = "Pods/Target Support Files/Pods-Playtime_1/Pods-Playtime_1.release.xcconfig"; sourceTree = "<group>"; };
 		DB6BCA6789FF71A1A9500A43 /* Pods-Playtime_1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playtime_1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Playtime_1/Pods-Playtime_1.debug.xcconfig"; sourceTree = "<group>"; };
 		EF827F8720F8C3F8CB0A70E4 /* Pods-PasswordManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordManager/Pods-PasswordManager.debug.xcconfig"; sourceTree = "<group>"; };
@@ -57,9 +52,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8953D3831E9A969300B6D9DF /* SQLite.framework in Frameworks */,
 				8939D7601E8EDB28004AD875 /* Log.framework in Frameworks */,
 				8939D7611E8EDB28004AD875 /* Whisper.framework in Frameworks */,
+				60B23BEA64E49440974766F0 /* Pods_PasswordManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,9 +64,6 @@
 		48CA45F67EAA03C8A1C5FB80 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8953D3821E9A969300B6D9DF /* SQLite.framework */,
-				89F6D7B91E8EDBB10083BF16 /* HTYTextField.framework */,
-				8939D75C1E8EDB28004AD875 /* InteractiveSideMenu.framework */,
 				8939D75D1E8EDB28004AD875 /* Log.framework */,
 				8939D75E1E8EDB28004AD875 /* Whisper.framework */,
 				0CB2CE867F12966ED1F29254 /* Pods_Playtime_1.framework */,
@@ -135,7 +127,6 @@
 		8987ABDA1E8EEB5D0048CE20 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				89B8BF081E9A952B0062C3AE /* DatabaseController */,
 				89F496E91E8FD425007C7625 /* PasswordDetailController */,
 				89F496E61E8FD364007C7625 /* PasswordSaveController */,
 				8987ABE01E8FBCAD0048CE20 /* PasswordListController */,
@@ -178,18 +169,10 @@
 			name = PasswordListController;
 			sourceTree = "<group>";
 		};
-		89B8BF081E9A952B0062C3AE /* DatabaseController */ = {
-			isa = PBXGroup;
-			children = (
-				89B8BF091E9A95380062C3AE /* Database.swift */,
-			);
-			name = DatabaseController;
-			sourceTree = "<group>";
-		};
 		89F496E31E8FD0C8007C7625 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				89F496E41E8FD0E2007C7625 /* PasswordObject.swift */,
+				7F4DBC361EFAC70800157136 /* PWEntity.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -294,7 +277,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		80FE5B468005BB41953D61B0 /* [CP] Copy Pods Resources */ = {
@@ -338,11 +321,10 @@
 				8987ABE41E8FBD3E0048CE20 /* TableView.swift in Sources */,
 				892B0D2B1E8ED7D700054101 /* LoginController.swift in Sources */,
 				89F496EB1E8FD434007C7625 /* PasswordDetailController.swift in Sources */,
+				7F4DBC381EFAC70800157136 /* PWEntity.xcdatamodeld in Sources */,
 				892B0D291E8ED7D700054101 /* AppDelegate.swift in Sources */,
-				89B8BF0A1E9A95380062C3AE /* Database.swift in Sources */,
 				8987ABDD1E8EEB810048CE20 /* PasswordGenerator.swift in Sources */,
 				89F496E81E8FD37B007C7625 /* PasswordSave.swift in Sources */,
-				89F496E51E8FD0E3007C7625 /* PasswordObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +493,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7F4DBC361EFAC70800157136 /* PWEntity.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7F4DBC371EFAC70800157136 /* PWEntity.xcdatamodel */,
+			);
+			currentVersion = 7F4DBC371EFAC70800157136 /* PWEntity.xcdatamodel */;
+			name = PWEntity.xcdatamodeld;
+			path = ../PWEntity.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 892B0D1D1E8ED7D700054101 /* Project object */;
 }

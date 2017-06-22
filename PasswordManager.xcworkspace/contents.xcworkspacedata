@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Playtime_1/Password+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Playtime_1/Password+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:PasswordManager.xcodeproj">
    </FileRef>
    <FileRef

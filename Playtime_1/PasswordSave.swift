@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import Whisper
+import Log
 
 class PasswordSaveController: UIViewController{
     
@@ -16,8 +17,11 @@ class PasswordSaveController: UIViewController{
     @IBOutlet var username: UITextField!
     @IBOutlet var textView: UITextView!
     
+    var PWListController: PasswordListController = PasswordListController(nibName: nil, bundle: nil)
+    var pws: [Password] = []
     var pwTextView:String = ""
-    var db = database()
+    
+    let log = Logger()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,24 +37,26 @@ class PasswordSaveController: UIViewController{
     }
     
     @IBAction func saveBtn(_ sender: UIButton) {
-        let message: Message
-        guard let navigationController_ = navigationController else { return }
-
         if(siteFor.text!.isEmpty || username.text!.isEmpty)
         {
             let alert = UIAlertController(title: "Can't save it...", message: "Either the username or site textfield is empty 🙄", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "I'm sorry. I'll fix it. 😩", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
+            log.error("Something bad happened...")
         } else {
-            db.insert(site_: siteFor.text!, username_: username.text!, password_: textView.text!)
-            message = Message(title: "Password saved 🎉", backgroundColor: .green)
-            Whisper.show(whisper: message, to: navigationController_, action: .show)
             
-            let pwListView = storyboard?.instantiateViewController(withIdentifier: "PasswordListView") as! PasswordListController
-            navigationController?.pushViewController(pwListView, animated: true)
+            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+            let password = Password(context: context)
+            password.passwordFor = siteFor.text!
+            password.username = username.text!
+            password.password = textView.text!
+            
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            
+            performSegueToReturnBack()
             self.tabBarController?.selectedIndex = 0
+            log.info("Item saved!")
         }
-        
     }
     
     func hideKeyboard()
@@ -62,5 +68,12 @@ class PasswordSaveController: UIViewController{
     func dismissKeyboard() {
         view.endEditing(true)
     }
-
+    
+    func performSegueToReturnBack()  {
+        if let nav = self.navigationController {
+            nav.popViewController(animated: true)
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
 }

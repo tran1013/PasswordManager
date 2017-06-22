@@ -1,20 +1,15 @@
 PODS:
   - Log (1.0)
-  - SQLite.swift (0.11.2):
-    - SQLite.swift/standard (= 0.11.2)
-  - SQLite.swift/standard (0.11.2)
   - Whisper (4.0.0)
 
 DEPENDENCIES:
   - Log
-  - SQLite.swift
   - Whisper
 
 SPEC CHECKSUMS:
   Log: 5e368c9528db07517d18d2d04ff5fe2b6f5a1e21
-  SQLite.swift: 670c3e9e0a806bbfd56a3de5d530768dc0e6fe7c
   Whisper: 08be92623311f8e53201e62e17f6d7b9599a4714
 
-PODFILE CHECKSUM: 69d514d3ef742b6af84407fd93abc7b1c969fd43
+PODFILE CHECKSUM: db3a8021d4390e97902ae9bbd260921b5114fb1f
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1
